@@ -1,0 +1,56 @@
+.github,
+.telegram {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  .first {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(30, 30, 30);
+    text-align: left;
+    transform-style: preserve-3d;
+    font-size: 5rem;
+
+    @media screen and (max-width: 767px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.github {
+  animation: giro 24s infinite linear reverse;
+}
+
+.telegram {
+  animation: giro 24s infinite linear;
+}
+
+.github span {
+  height: 34rem;
+  transform: rotate(calc(360deg / 14));
+  @media screen and (max-width: 767px) {
+    height: 20rem;
+  }
+}
+
+.telegram span {
+  height: 46rem;
+  transform: rotate(calc(360deg / 20));
+
+  @media screen and (max-width: 767px) {
+    height: 28rem;
+  }
+}
+
+@keyframes giro {
+  100% {
+    transform: rotate(1turn);
+  }
+}
