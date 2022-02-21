@@ -15,8 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <div className="min-vh-100 one-page"> */}
-      <Routes>
+      <Routes basename="/redux-shop">
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
@@ -24,7 +23,6 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      {/* </div> */}
     </>
   );
 }
