@@ -1,6 +1,4 @@
-import "./App.css";
-
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
@@ -13,9 +11,10 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <>
+    <BrowserRouter basename="/redux-shop">
+
       <Navbar />
-      <Routes basename="/redux-shop">
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
@@ -23,7 +22,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </BrowserRouter>
   );
 }
 
