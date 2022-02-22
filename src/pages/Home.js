@@ -3,15 +3,14 @@ import React from "react";
 const Home = () => {
   return (
     <div className="min-vh-100 one-page">
-      <div className="card bg-dark text-white border-0 vh-100">
+      <div className="card bg-dark text-white border-0 vh-100" id="home">
         <img
           src={require("../assets/bg.jpg")}
-          className="card-img w-100 h-100"
-          alt="Background"
-          style={{ objectFit: "cover" }}
+          alt="Background image"
+          className="card-img img-cover"
         />
         <div
-          className="card-img-overlay d-flex flex-column justify-content-center"
+          className="card-img-overlay flex-center"
           style={{ backdropFilter: "blur(3px)" }}
         >
           <div className="container">

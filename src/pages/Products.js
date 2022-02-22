@@ -82,18 +82,17 @@ const Products = () => {
                 className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mx-0"
                 key={product.id}
               >
-                <Link to={`/products/${product.id}`} className="card-link w-100">
+                <Link
+                  to={`/products/${product.id}`}
+                  className="card-link w-100"
+                >
                   <div className="card h-100 p-2">
-                    <div
-                      className="position-relative w-100"
-                      style={{ paddingTop: "100%" }}
-                    >
+                    <div className="position-relative w-100 pt-100">
                       <div className="position-absolute top-0 bottom-0 w-100 h-100">
                         <img
                           src={product.image}
-                          className="card-img-top h-100"
                           alt={product.title}
-                          style={{ objectFit: "contain" }}
+                          className="card-img-top img-contain"
                         />
                       </div>
                     </div>

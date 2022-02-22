@@ -4,7 +4,7 @@ import "./Contacts.scss";
 const Contacts = () => {
   return (
     <div className="min-vh-100 one-page">
-      <div className="contacts h-100 flex-center">
+      <div className="h-100 flex-center" id="contacts">
         <div className="animation-wrapper position-absolute w-100 h-100">
           <div className="animation position-relative w-100 h-100 overflow-hidden">
             <div className="github">
@@ -110,15 +110,15 @@ const Contacts = () => {
           <div className="flex-center">
             <a
               href="https://t.me/andrei_shpinko"
-              className="btn btn-dark me-2 card-link text-white"
+              className="btn btn-dark card-link text-white"
             >
-              <i className="fa fa-telegram fs-1"></i>
+              <i className="fa fa-telegram"></i>
             </a>
             <a
               href="https://github.com/AndreiShpinko"
-              className="btn btn-dark me-2 card-link text-white"
+              className="btn btn-dark card-link text-white"
             >
-              <i className="fa fa-github fs-1"></i>
+              <i className="fa fa-github"></i>
             </a>
           </div>
         </div>

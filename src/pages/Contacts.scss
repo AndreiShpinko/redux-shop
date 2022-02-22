@@ -1,3 +1,12 @@
+#contacts i {
+  font-size: 3em;
+  width: 1.2em;
+  @media screen and (max-width: 767px) {
+  font-size: 2.2em;
+  width: 1em;
+  }
+}
+
 .github,
 .telegram {
   position: absolute;
@@ -26,26 +35,25 @@
 
 .github {
   animation: giro 24s infinite linear reverse;
+  span {
+    height: 34rem;
+    transform: rotate(calc(360deg / 14));
+
+    @media screen and (max-width: 767px) {
+      height: 20rem;
+    }
+  }
 }
 
 .telegram {
   animation: giro 24s infinite linear;
-}
+  span {
+    height: 46rem;
+    transform: rotate(calc(360deg / 20));
 
-.github span {
-  height: 34rem;
-  transform: rotate(calc(360deg / 14));
-  @media screen and (max-width: 767px) {
-    height: 20rem;
-  }
-}
-
-.telegram span {
-  height: 46rem;
-  transform: rotate(calc(360deg / 20));
-
-  @media screen and (max-width: 767px) {
-    height: 28rem;
+    @media screen and (max-width: 767px) {
+      height: 28rem;
+    }
   }
 }
 

@@ -4,12 +4,10 @@ import "./Loader.scss";
 const Loader = () => {
   return (
     <div>
-      <div className="loader">
-        <div id="loader">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div id="loader">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );

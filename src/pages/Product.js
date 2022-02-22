@@ -24,7 +24,9 @@ const Product = () => {
   }, []);
 
   const handleCartBtn = () => {
-    (productStatus)?dispatch(removeProduct(product)):dispatch(addItem(product));
+    productStatus
+      ? dispatch(removeProduct(product))
+      : dispatch(addItem(product));
     setProductStatus(!productStatus);
   };
 
@@ -32,15 +34,17 @@ const Product = () => {
     return (
       <>
         <div className="col-md-6 d-flex justify-content-center align-items-center">
-          <div style={{ height: "350px" }}>
-            <img
-              src={product.image}
-              alt={product.title}
-              className="img-contain"
-            />
+          <div className="position-relative w-100 pt-100">
+            <div className="position-absolute top-0 bottom-0 w-100 h-100">
+              <img
+                src={product.image}
+                alt={product.title}
+                className="card-img-top img-contain"
+              />
+            </div>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 pt-3 pt-md-0">
           <h4 className="text-uppercase text-black-50">{product.category}</h4>
           <h1 className="display-5">{product.title}</h1>
           <p className="lead fw-bolder">
@@ -51,7 +55,9 @@ const Product = () => {
           <p className="lead">{product.description}</p>
           <div className="d-flex justify-content-center justify-content-md-start">
             <button
-              className={`btn btn-outline-dark px-4 py-2${productStatus?' active':''}`}
+              className={`btn btn-outline-dark px-4 py-2${
+                productStatus ? " active" : ""
+              }`}
               onClick={handleCartBtn}
             >
               {productStatus ? "Remove from Cart" : "Add to Cart"}
@@ -66,10 +72,8 @@ const Product = () => {
   };
 
   return (
-    <div>
-      <div className="container pt-header">
-        <div className="row py-4">{loading ? <Loader /> : <ShowProduct />}</div>
-      </div>
+    <div className="container">
+      <div className="row py-4">{loading ? <Loader /> : <ShowProduct />}</div>
     </div>
   );
 };

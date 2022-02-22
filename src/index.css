@@ -28,22 +28,20 @@ body {
   object-fit: contain;
 }
 
-.pt-header {
-  padding-top: 80px;
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pt-100 {
+  padding-top: 100%;
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contacts i {
-  min-width: 40px;
-}
-
-.fw-600 {
-  font-weight: 600;
 }
 
 .one-page {

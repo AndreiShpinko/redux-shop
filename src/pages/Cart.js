@@ -6,8 +6,8 @@ import Message from "../components/Message";
 import { emptyCart } from "../redux/action";
 
 const Cart = () => {
-  const products = useSelector((store) => store.handleCart);
   const dispatch = useDispatch();
+  const products = useSelector((store) => store.handleCart);
 
   const handleEmptyCart = () => {
     dispatch(emptyCart());
@@ -21,7 +21,7 @@ const Cart = () => {
 
   const renderProducts = (
     <>
-      <div className="cart pt-header">
+      <div id="cart">
         <div className="container my-4">
           <div className="row d-flex justify-content-between">
             <div className="col">
@@ -36,15 +36,14 @@ const Cart = () => {
             </div>
             <div className="col-auto">
               <button
-                className="btn btn-outline-dark fw-600 me-4"
+                className="btn btn-outline-dark fw-bolder me-4"
                 onClick={() => handleEmptyCart()}
               >
                 Empty cart
               </button>
               <Link
                 to="/contacts"
-                className="btn btn-outline-dark fw-600"
-                onClick={() => handleEmptyCart()}
+                className="btn btn-outline-dark fw-bolder"
               >
                 Buy
               </Link>
