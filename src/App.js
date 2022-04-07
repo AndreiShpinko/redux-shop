@@ -11,7 +11,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter basename="/redux-shop">
+    <BrowserRouter basename="/shop">
 
       <Navbar />
       <Routes>
