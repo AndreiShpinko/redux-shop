@@ -1,6 +1,6 @@
 {
-  "homepage": "http://andreishpinko.github.io/redux-shop",
-  "name": "redux-shop",
+  "homepage": "http://andreishpinko.github.io/shop",
+  "name": "shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
