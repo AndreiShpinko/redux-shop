@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/redux-shop/static/css/main.1a5a02c9.css",
-    "main.js": "/redux-shop/static/js/main.817e957b.js",
-    "static/media/bg.jpg": "/redux-shop/static/media/bg.95d669808e4d4adf7d0e.jpg",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/redux-shop/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/redux-shop/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/redux-shop/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/redux-shop/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/emptyCart.png": "/redux-shop/static/media/emptyCart.af98885700acb9bf8cc0.png",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/redux-shop/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/notFound.png": "/redux-shop/static/media/notFound.3958d163b30b5bdb8baf.png",
-    "index.html": "/redux-shop/index.html",
-    "main.1a5a02c9.css.map": "/redux-shop/static/css/main.1a5a02c9.css.map",
-    "main.817e957b.js.map": "/redux-shop/static/js/main.817e957b.js.map"
+    "main.css": "/shop/static/css/main.553fa641.css",
+    "main.js": "/shop/static/js/main.5315b981.js",
+    "static/media/bg.jpg": "/shop/static/media/bg.95d669808e4d4adf7d0e.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/shop/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/shop/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/shop/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/shop/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/emptyCart.png": "/shop/static/media/emptyCart.af98885700acb9bf8cc0.png",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/shop/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/notFound.png": "/shop/static/media/notFound.3958d163b30b5bdb8baf.png",
+    "index.html": "/shop/index.html",
+    "main.553fa641.css.map": "/shop/static/css/main.553fa641.css.map",
+    "main.5315b981.js.map": "/shop/static/js/main.5315b981.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a5a02c9.css",
-    "static/js/main.817e957b.js"
+    "static/css/main.553fa641.css",
+    "static/js/main.5315b981.js"
   ]
 }
